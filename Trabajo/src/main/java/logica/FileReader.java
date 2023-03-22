@@ -10,7 +10,7 @@ public class FileReader {
 
     public static ContadorPalabras contadorPalabras = new ContadorPalabras();
 
-    public static String[] fileReader(String path) throws FileNotFoundException {
+    public static String[] reader(String path) throws FileNotFoundException {
         List<String> output = new ArrayList<>();
         File file = new File(path);
         Scanner reader = new Scanner(file);
@@ -28,10 +28,6 @@ public class FileReader {
         return counter;
     }
     public static void main(String[] args) throws FileNotFoundException {
-        String[] words = fileReader("C:\\Users\\juanm\\Desktop\\Facu\\Algoritmos y estrucutra de datos\\UT1\\aed-2022-ut1-pd5\\src\\main\\java\\uy\\edu\\ucu\\aed\\ut1pd1ej5\\info.txt");
-        for(int i=0; i<words.length;i++){
-            System.out.println(words[i]);
-        }
-        System.out.println(amountOfWords(words));
+
     }
 }

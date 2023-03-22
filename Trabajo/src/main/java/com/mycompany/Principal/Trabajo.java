@@ -5,18 +5,26 @@
 
 package com.mycompany.Principal;
 import logica.ContadorPalabras;
+import logica.FileReader;
 
-/**
- *
- * @author Erik Hernandez
- */
+import java.io.FileNotFoundException;
+
+import static logica.FileReader.reader;
+
 public class Trabajo {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         ContadorPalabras contador = new ContadorPalabras(); // Crear un objeto de clase ContadorPalabras
         System.out.println(contador.contarPalabras(" hh ")); // Prubea del método para contar palabras
-
         System.out.println(contador.palabrasMayores("hola hola hola", 0)); // Prueba del método para contar las
         // palabras de largo mayor al indicado por x
+
+
+        String[] words = FileReader.reader("Trabajo/src/main/java/com/mycompany/Principal/info.txt");
+        for(int i=0; i<words.length;i++){
+            System.out.println(words[i]);   //Corroborando que el array contenga las lineas del archivo
+        }
+
+        System.out.println(FileReader.amountOfWords(words)); //Corroborando que se cuente bien la cantidad de palabras
     }
 }
