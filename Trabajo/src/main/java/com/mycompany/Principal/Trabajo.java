@@ -13,9 +13,10 @@ import logica.ContadorPalabras;
 public class Trabajo {
 
     public static void main(String[] args) {
-        ContadorPalabras contador = new ContadorPalabras();
-        System.out.println(contador.contarPalabras(" hh "));
+        ContadorPalabras contador = new ContadorPalabras(); // Crear un objeto de clase ContadorPalabras
+        System.out.println(contador.contarPalabras(" hh ")); // Prubea del método para contar palabras
 
-        System.out.println(contador.palabrasMayores("hola hola hola", 0));
+        System.out.println(contador.palabrasMayores("hola hola hola", 0)); // Prueba del método para contar las
+        // palabras de largo mayor al indicado por x
     }
 }
