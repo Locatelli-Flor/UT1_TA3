@@ -14,6 +14,8 @@ public class Trabajo {
 
     public static void main(String[] args) {
         ContadorPalabras contador = new ContadorPalabras();
-        System.out.println(contador.contarPalabras("  "));
+        System.out.println(contador.contarPalabras(" hh "));
+
+        System.out.println(contador.palabrasMayores("hola hola hola", 0));
     }
 }
