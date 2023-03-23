@@ -27,7 +27,4 @@ public class FileReader {
         }
         return counter;
     }
-    public static void main(String[] args) throws FileNotFoundException {
-
-    }
 }
