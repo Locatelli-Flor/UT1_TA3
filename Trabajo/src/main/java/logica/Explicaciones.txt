@@ -1,0 +1,21 @@
+Explicación del ejercicio 1:
+Nuestro ejercicio consiste en recorrer el string entero, determinarndo una palabra según si hay
+espacios en blanco juntos, o si hay un caractér seguido de un espacio, y a la vez determinando 
+si las palabras contienen letras. Para contar las palabras usamos un contador que incrementa
+cuando se cumplen las siguientes condiciones: el caractér es un espacio y el anterior no lo era y
+si la palabra tiene una letra.
+
+Explicación del ejercicio 2 subgrupo A:
+Este ejercicio lo hicimos con dos métodos distintos. El primero determina la cantidad de vocales que
+tiene el string. El segundo determina la cantidad de consonantes que hay en el string restandole
+al total de letras la cantidad de vocales.
+
+Explicación del ejercicio 2 subgrupo B:
+Este ejercicio consiste en recorrer un string, y si se encuentra una palabra con por lo menos una
+letra, que cuente el largo de esta, y que compare con x, y si el largo es mayor, que se cuente
+como palabra mayor a x. Al final devolver este contador.
+
+Explicación del ejercicio 3:
+Este ejercicio lo hicimos pensando en un objeto de clase Scanner, que puede leer datos de un archivo.
+Pensamos en iterar con un while mientras que el archivo tenga lineas para leer, y que vaya agregando
+a un array de strings cada línea del archivo.
